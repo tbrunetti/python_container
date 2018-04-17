@@ -53,11 +53,20 @@ cd python_container
 ```
 sudo singularity build --writable myContainer.simg python_env_v0.1_recipe.txt
 ```   
-3.  Move container to any location **sudo not required!**
+3.  Move container to any location **sudo not required!**  
 Can be moved to:  
 * different location on your local computer
-* a different computer no matter the OS
+* a different computer with any OS
 * HPC
 
 ## Usage
+To access the container shell with accessibilty to the above libraries:  
+```
+singularity shell myContainer.simg
+```
+This will activate your container and give you an interactive shell that has access to all the installed programs and libraries in your container.  
 
+Alternatively, using the `run` command followed by the command to execute will run command call using the available programs, libraries and packages installed within the container.  
+```
+singularity run python myProgram.py
+```
