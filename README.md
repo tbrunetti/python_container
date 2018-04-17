@@ -53,7 +53,7 @@ cd python_container
 ```
 sudo singularity build --writable myContainer.simg python_env_v0.1_recipe.txt
 ```   
-3.  Move container to any location
+3.  Move container to any location **sudo not required!**
 Can be moved to:  
 * different location on your local computer
 * a different computer no matter the OS
