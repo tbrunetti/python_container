@@ -1,7 +1,7 @@
 # python_container
 Singularity container(s) for Python with installed packages for those that do not have web access/sudo rights
 
-## About python_env_v0.1.simg
+## About python_env_v0.1
 OS:  Ubuntu version xenial  
 Python version 2.7  
 Libraries installed:  
@@ -40,6 +40,24 @@ Libraries installed:
 * xlrd v1.1.0
 * urllib3 v1.22
 
+
+## Installation and Build
+Singularity must be installed on your local computer with root privileges.
+
+1.  Clone this repo and change into repo directory:
+```
+git clone https://github.com/tbrunetti/python_container.git
+cd python_container
+```  
+2.  Build container (may take several minutes)
+```
+sudo singularity build --writable myContainer.simg python_env_v0.1_recipe.txt
+```   
+3.  Move container to any location
+Can be moved to:  
+* different location on your local computer
+* a different computer no matter the OS
+* HPC
 
 ## Usage
 
