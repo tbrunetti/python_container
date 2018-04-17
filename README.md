@@ -68,5 +68,5 @@ This will activate your container and give you an interactive shell that has acc
 
 Alternatively, using the `run` command followed by the command to execute will run command call using the available programs, libraries and packages installed within the container.  
 ```
-singularity run python myProgram.py
+singularity run myContainer.simg python myProgram.py
 ```
