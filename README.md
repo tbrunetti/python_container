@@ -1,5 +1,6 @@
 # python_container
-Singularity container(s) for Python with installed packages for those that do not have web access/sudo rights
+
+Singularity container recipe(s) for Python builds with installed packages for those that have restricted access to the web/strict firewalls/lack sudo rights/or are running code/analysis on a HPC 
 
 ## About python_env_v0.1
 OS:  Ubuntu version xenial  
